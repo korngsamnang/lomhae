@@ -1,0 +1,307 @@
+/* TODO Global style */
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+html {
+        font-size: 62.5%;
+}
+body {
+        font-family: "Poppins", sans-serif;
+}
+h1 {
+        font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+        font-size: 2rem;
+}
+h2 {
+        font-size: 4rem;
+        font-weight: 700;
+}
+h3 {
+        font-size: 2.4rem;
+        font-weight: normal;
+}
+h4,
+h5 {
+        font-size: 2.8rem;
+}
+a {
+        color: white;
+        text-decoration: none;
+}
+a:hover {
+        text-decoration: underline;
+}
+button {
+        padding: 1.8rem 4.6rem;
+        background-color: #4c6e97;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: background 0.5s ease-in-out;
+}
+button:hover {
+        background-color: #27394e;
+}
+/*TODO Nav section */
+
+header {
+        background: #131c27;
+        color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+}
+header nav {
+        width: 90%;
+        margin: auto;
+        padding: 2rem;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+header nav ul {
+        display: flex;
+        flex: 1 1 40rem;
+        justify-content: space-around;
+        list-style-type: none;
+}
+header nav #logo {
+        flex: 2 1 40rem;
+        font-family: "Pattaya", sans-serif;
+}
+.hero {
+        background-image: url("./images/phnom-penh-city.jpg");
+        min-height: 90vh;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.hero h3 {
+        padding: 2rem;
+}
+/*TODO Section location*/
+
+#section-locations {
+        background-image: url("./images/bouk-ko.jpg");
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        color: white;
+        position: relative;
+        overflow: hidden;
+}
+#section-locations .locations-head {
+        width: 90%;
+        margin: auto;
+}
+#section-locations .locations-head h2 {
+        text-decoration: underline;
+        padding: 2rem 0;
+        color: #dfdfdf;
+        font-weight: bold;
+}
+#section-locations .locations-head h3 {
+        padding: 2rem 0rem;
+        /* background: linear-gradient(#131c27, #663b34);
+        display: table; */
+}
+.cloud {
+        position: absolute;
+        top: 0%;
+        left: 30%;
+        opacity: 0.6;
+        pointer-events: none;
+}
+.moving-cloud {
+        animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+/*TODO Cloud Animation */
+
+@keyframes cloudAnimation {
+        from {
+                transform: translate(10%, -10%);
+        }
+        to {
+                transform: translate(0%, 0%);
+        }
+}
+/*TODO Benefits section*/
+#benefits-section .benefits-head {
+        background-color: #343c44;
+        /* padding: 3rem; */
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+}
+#benefits-section .benefits-head h3 {
+        padding: 1rem;
+}
+#benefits-section .cards img {
+        max-width: 15%;
+        margin: 2rem;
+}
+#benefits-section .cards {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        min-height: 60vh;
+        align-items: center;
+        flex-wrap: wrap;
+}
+#benefits-section .cards .each-card {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+                0px 20px 20px rgba(0, 0, 0, 0.1);
+        flex: 1 1 30rem;
+        min-height: 40vh;
+        margin: 2rem 5rem;
+        text-align: center;
+}
+#benefits-section .cards .each-card .card-icon {
+        background-color: #27394e;
+}
+#benefits-section .cards .each-card h4,
+#benefits-section .cards .each-card p {
+        padding: 1rem;
+}
+
+/* Section Contacts*/
+
+#section-contacts {
+        background-image: url("./images/angkor-wat.jpg");
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+#section-contacts .form {
+        background-color: rgba(19, 28, 39, 0.9);
+        padding: 2rem 0 0 0;
+        width: 50%;
+        color: white;
+        text-align: center;
+        border-radius: 20px;
+}
+#section-contacts .form .form-head {
+        padding-bottom: 4rem;
+}
+#section-contacts .form .form-surname {
+        padding: 2rem 2rem 1rem 2rem;
+}
+#section-contacts .form .form-email {
+        padding: 2rem 2rem 6rem 1.7rem;
+}
+#section-contacts .form label {
+        margin: 0rem 2rem;
+}
+#section-contacts .form input {
+        padding: 0.6rem;
+}
+#section-contacts .form button {
+        width: 100%;
+        padding: 1.5rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+}
+/* TODO footer sections*/
+footer {
+        color: white;
+        background-color: rgba(19, 28, 39, 1);
+}
+footer .footer-sections {
+        display: flex;
+        padding: 2rem;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        min-height: 10vh;
+        flex-wrap: wrap;
+}
+footer .footer-sections h5 {
+        flex: 2 1 40rem;
+}
+footer .footer-sections ul {
+        display: flex;
+        list-style-type: none;
+        flex: 1 1 40rem;
+        justify-content: space-between;
+        align-items: center;
+}
+@media screen and (max-width: 932px) {
+        html {
+                font-size: 45%;
+        }
+        nav {
+                text-align: center;
+        }
+        #logo {
+                padding: 2rem;
+        }
+        .cloud {
+                height: 80%;
+                left: -40%;
+        }
+        #section-locations .locations-head h2 {
+                color: #dddd;
+        }
+        #section-locations .locations-head h3 {
+                background: rgba(19, 28, 39, 0.9);
+                display: flex;
+                padding: 3rem 0rem;
+        }
+        #benefits-section .benefits-head {
+                min-height: 30vh;
+        }
+        #benefits-section .cards .each-card {
+                min-height: 35vh;
+        }
+        #section-contacts .form {
+                width: 70%;
+        }
+        #section-contacts .form input {
+                margin-top: 2rem;
+        }
+        #section-contacts .form .form-email label {
+                margin-left: -2rem;
+        }
+        footer {
+                text-align: center;
+        }
+        footer h5 {
+                padding-bottom: 2rem;
+        }
+}
+@media screen and (max-width: 932px) and (orientation: landscape) {
+        .cloud {
+                height: 80%;
+                left: 32%;
+        }
+}
+@media screen and (max-width: 912px) and (min-width: 480px) {
+        #section-contacts .form .form-email label {
+                margin-left: 1.8rem;
+        }
+}
