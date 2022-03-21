@@ -79,7 +79,7 @@ header nav #logo {
         flex: 2 1 40rem;
         font-family: "Pattaya", sans-serif;
 }
-.hero {
+.main-section {
         background-image: url("./images/phnom-penh-city.jpg");
         min-height: 90vh;
         background-size: cover;
@@ -91,7 +91,7 @@ header nav #logo {
         align-items: center;
         text-align: center;
 }
-.hero h3 {
+.main-section h3 {
         padding: 2rem;
 }
 /*TODO Section location*/
