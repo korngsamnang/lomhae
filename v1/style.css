@@ -81,7 +81,7 @@ header nav #logo {
     font-family: "Pattaya", sans-serif;
 }
 .main-section {
-    background-image: url("./images/phnom-penh-city.jpg");
+    background-image: url("images/phnom-penh-city.jpg");
     min-height: 90vh;
     background-size: cover;
     background-position: center;
@@ -98,7 +98,7 @@ header nav #logo {
 /*TODO Section location*/
 
 #section-locations {
-    background-image: url("./images/bouk-ko.jpg");
+    background-image: url("images/bouk-ko.jpg");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -189,7 +189,7 @@ header nav #logo {
 /* Section Contacts*/
 
 #section-contacts {
-    background-image: url("./images/angkor-wat.jpg");
+    background-image: url("images/angkor-wat.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
