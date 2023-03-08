@@ -4,16 +4,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Poppins", sans-serif;
 }
+
 h1 {
     font-size: 2.6rem;
 }
+
 li,
 button,
 label,
@@ -21,25 +25,31 @@ input,
 p {
     font-size: 2rem;
 }
+
 h2 {
     font-size: 4rem;
     font-weight: 700;
 }
+
 h3 {
     font-size: 2.4rem;
     font-weight: normal;
 }
+
 h4,
 h5 {
     font-size: 2.8rem;
 }
+
 a {
     color: white;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 button {
     padding: 1.8rem 4.6rem;
     background-color: #4c6e97;
@@ -48,9 +58,11 @@ button {
     cursor: pointer;
     transition: background 0.5s ease-in-out;
 }
+
 button:hover {
     background-color: #27394e;
 }
+
 /*TODO Nav section */
 
 header {
@@ -60,6 +72,7 @@ header {
     top: 0px;
     z-index: 3;
 }
+
 header nav {
     width: 90%;
     margin: auto;
@@ -70,16 +83,19 @@ header nav {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 header nav ul {
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-around;
     list-style-type: none;
 }
+
 header nav #logo {
     flex: 2 1 40rem;
     font-family: "Pattaya", sans-serif;
 }
+
 .main-section {
     background-image: url("images/phnom-penh-city.jpg");
     min-height: 90vh;
@@ -92,9 +108,11 @@ header nav #logo {
     align-items: center;
     text-align: center;
 }
+
 .main-section h3 {
     padding: 2rem;
 }
+
 /*TODO Section location*/
 
 #section-locations {
@@ -108,21 +126,25 @@ header nav #logo {
     position: relative;
     overflow: hidden;
 }
+
 #section-locations .locations-head {
     width: 90%;
     margin: auto;
 }
+
 #section-locations .locations-head h2 {
     text-decoration: underline;
     padding: 2rem 0;
     color: #dfdfdf;
     font-weight: bold;
 }
+
 #section-locations .locations-head h3 {
     padding: 2rem 0rem;
     /* background: linear-gradient(#131c27, #663b34);
         display: table; */
 }
+
 .cloud {
     position: absolute;
     top: 0%;
@@ -130,9 +152,11 @@ header nav #logo {
     opacity: 0.6;
     pointer-events: none;
 }
+
 .moving-cloud {
     animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
+
 /*TODO Cloud Animation */
 
 @keyframes cloudAnimation {
@@ -143,6 +167,7 @@ header nav #logo {
         transform: translate(0%, 0%);
     }
 }
+
 /*TODO Benefits section*/
 #benefits-section .benefits-head {
     background-color: #343c44;
@@ -155,13 +180,16 @@ header nav #logo {
     color: white;
     text-align: center;
 }
+
 #benefits-section .benefits-head h3 {
     padding: 1rem;
 }
+
 #benefits-section .cards img {
     max-width: 15%;
     margin: 2rem;
 }
+
 #benefits-section .cards {
     width: 90%;
     margin: auto;
@@ -170,17 +198,20 @@ header nav #logo {
     align-items: center;
     flex-wrap: wrap;
 }
+
 #benefits-section .cards .each-card {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
+    0px 20px 20px rgba(0, 0, 0, 0.1);
     flex: 1 1 30rem;
     min-height: 40vh;
     margin: 2rem 5rem;
     text-align: center;
 }
+
 #benefits-section .cards .each-card .card-icon {
     background-color: #27394e;
 }
+
 #benefits-section .cards .each-card h4,
 #benefits-section .cards .each-card p {
     padding: 1rem;
@@ -198,6 +229,7 @@ header nav #logo {
     align-items: center;
     justify-content: center;
 }
+
 #section-contacts .form {
     background-color: rgba(19, 28, 39, 0.9);
     padding: 2rem 0 0 0;
@@ -206,32 +238,40 @@ header nav #logo {
     text-align: center;
     border-radius: 20px;
 }
+
 #section-contacts .form .form-head {
     padding-bottom: 4rem;
 }
+
 #section-contacts .form .form-surname {
     padding: 2rem 2rem 1rem 2rem;
 }
+
 #section-contacts .form .form-email {
     padding: 2rem 2rem 6rem 1.7rem;
 }
+
 #section-contacts .form label {
     margin: 0rem 2rem;
 }
+
 #section-contacts .form input {
     padding: 0.6rem;
 }
+
 #section-contacts .form button {
     width: 100%;
     padding: 1.5rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 /* TODO footer sections*/
 footer {
     color: white;
     background-color: rgba(19, 28, 39, 1);
 }
+
 footer .footer-sections {
     display: flex;
     padding: 2rem;
@@ -241,9 +281,11 @@ footer .footer-sections {
     min-height: 10vh;
     flex-wrap: wrap;
 }
+
 footer .footer-sections h5 {
     flex: 2 1 40rem;
 }
+
 footer .footer-sections ul {
     display: flex;
     list-style-type: none;
@@ -251,58 +293,408 @@ footer .footer-sections ul {
     justify-content: space-between;
     align-items: center;
 }
+
 @media screen and (max-width: 932px) {
     html {
         font-size: 45%;
     }
+
     nav {
         text-align: center;
     }
+
     #logo {
         padding: 2rem;
     }
+
     .cloud {
         height: 80%;
         left: -40%;
     }
+
     #section-locations .locations-head h2 {
         color: #dddd;
     }
+
     #section-locations .locations-head h3 {
         background: rgba(19, 28, 39, 0.9);
         display: flex;
         padding: 3rem 0rem;
     }
+
     #benefits-section .benefits-head {
         min-height: 30vh;
     }
+
     #benefits-section .cards .each-card {
         min-height: 35vh;
     }
+
     #section-contacts .form {
         width: 70%;
     }
+
     #section-contacts .form input {
         margin-top: 2rem;
     }
+
     #section-contacts .form .form-email label {
         margin-left: -1.6rem;
     }
+
     footer {
         text-align: center;
     }
+
     footer h5 {
         padding-bottom: 2rem;
     }
 }
+
 @media screen and (max-width: 932px) and (orientation: landscape) {
     .cloud {
         height: 80%;
         left: 32%;
     }
 }
+
 @media screen and (max-width: 912px) and (min-width: 480px) {
     #section-contacts .form .form-email label {
         margin-left: 1.8rem;
     }
 }
+
+
+/* TODO Try to test another css style*/
+/*!* General Styles *!*/
+
+/*{*/
+/*    box-sizing: border-box*/
+/*;*/
+/*    margin: 0*/
+/*;*/
+/*    padding: 0*/
+/*;*/
+/*}*/
+/*body {*/
+/*    font-family: 'Segoe UI', sans-serif;*/
+/*    font-size: 16px;*/
+/*    color: #333;*/
+/*    line-height: 1.6;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*}*/
+
+/*ul {*/
+/*    list-style: none;*/
+/*}*/
+
+/*!* Header Styles *!*/
+
+/*header {*/
+/*    background-color: #fff;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*    z-index: 100;*/
+/*}*/
+
+/*nav {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 1rem;*/
+/*}*/
+
+/*#logo {*/
+/*    font-size: 2rem;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*nav ul {*/
+/*    display: flex;*/
+/*}*/
+
+/*nav ul li {*/
+/*    margin-left: 2rem;*/
+/*}*/
+
+/*nav ul li:first-child {*/
+/*    margin-left: 0;*/
+/*}*/
+
+/*nav ul li a {*/
+/*    font-size: 1.2rem;*/
+/*    font-weight: bold;*/
+/*    text-transform: uppercase;*/
+/*    padding: 0.5rem 1rem;*/
+/*    border-radius: 2rem;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*nav ul li a:hover {*/
+/*    background-color: #333;*/
+/*    color: #fff;*/
+/*}*/
+
+/*!* Main Section Styles *!*/
+
+/*.main-section {*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    background-image: url('https://images.unsplash.com/photo-1611150964733-2f854d1770a7');*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.main-section h2 {*/
+/*    font-size: 3rem;*/
+/*    margin-bottom: 1rem;*/
+/*    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/*.main-section h3 {*/
+/*    font-size: 1.5rem;*/
+/*    margin-bottom: 2rem;*/
+/*    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/*button {*/
+/*    font-size: 1.2rem;*/
+/*    font-weight: bold;*/
+/*    text-transform: uppercase;*/
+/*    padding: 0.5rem 1rem;*/
+/*    border-radius: 2rem;*/
+/*    background-color: #fff;*/
+/*    color: #333;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: #333;*/
+/*    color: #fff;*/
+/*}*/
+
+/*!* Locations Section Styles *!*/
+
+/*#section-locations {*/
+/*    padding: 5rem 0;*/
+/*    background-color: #f7f7f7;*/
+/*}*/
+
+/*.locations-head {*/
+/*    text-align: center;*/
+/*    margin-bottom: 3rem;*/
+/*}*/
+
+/*.locations-head h2 {*/
+/*    font-size: 2rem;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*.locations-head h3 {*/
+/*    font-size: 1.2rem;*/
+/*    margin-bottom: 2rem;*/
+/*    color: #777;*/
+/*}*/
+
+/*.moving-cloud {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    animation: cloudMove 20s linear infinite;*/
+/*}*/
+
+/*.cloud {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    animation: moveCloud 20s linear infinite;*/
+/*}*/
+
+/*@keyframes moveCloud {*/
+/*    from {*/
+/*        right: -200px;*/
+/*    }*/
+/*    to {*/
+/*        right: 100%;*/
+/*    }*/
+/*}*/
+
+/*!* Benefits section *!*/
+
+/*#benefits-section {*/
+/*    background-color: #f6f6f6;*/
+/*    padding: 80px 0;*/
+/*}*/
+
+/*.benefits-head {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.benefits-head h2 {*/
+/*    font-size: 48px;*/
+/*    font-weight: 600;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.benefits-head h3 {*/
+/*    font-size: 18px;*/
+/*    font-weight: 400;*/
+/*    margin-bottom: 80px;*/
+/*    color: #777;*/
+/*}*/
+
+/*.cards {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.each-card {*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 8px;*/
+/*    padding: 40px;*/
+/*    margin: 0 20px;*/
+/*    text-align: center;*/
+/*    max-width: 300px;*/
+/*}*/
+
+/*.card-icon {*/
+/*    background-color: #f6f6f6;*/
+/*    border-radius: 50%;*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    margin: 0 auto;*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+/*.card-icon img {*/
+/*    width: 32px;*/
+/*    height: 32px;*/
+/*}*/
+
+/*.each-card h4 {*/
+/*    font-size: 24px;*/
+/*    font-weight: 600;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.each-card p {*/
+/*    font-size: 18px;*/
+/*    font-weight: 400;*/
+/*    line-height: 1.5;*/
+/*    color: #777;*/
+/*}*/
+
+/*!* Contact section *!*/
+
+/*#section-contacts {*/
+/*    background-color: #f9f9f9;*/
+/*    padding: 80px 0;*/
+/*}*/
+
+/*.form {*/
+/*    max-width: 600px;*/
+/*    margin: 0 auto;*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 8px;*/
+/*    padding: 40px;*/
+/*}*/
+
+/*.form-head h2 {*/
+/*    font-size: 48px;*/
+/*    font-weight: 600;*/
+/*    margin-bottom: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.form label {*/
+/*    display: block;*/
+/*    font-size: 18px;*/
+/*    font-weight: 600;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.form input {*/
+/*    width: 100%;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    padding: 12px;*/
+/*    margin-bottom: 20px;*/
+/*    font-size: 18px;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*button[type="submit"] {*/
+/*    background-color: #000;*/
+/*    color: #fff;*/
+/*    padding: 12px 24px;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    font-size: 18px;*/
+/*    font-weight: 600;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.2s ease;*/
+/*}*/
+
+/*button[type="submit"]:hover {*/
+/*    background-color: #111;*/
+/*}*/
+
+/*!* Footer section *!*/
+
+/*footer {*/
+/*    background-color: #333;*/
+/*    color: #fff;*/
+/*    padding: 40px 0;*/
+/*}*/
+
+/*.footer-sections {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    background-color: #0a0a0a;*/
+/*    color: #fff;*/
+/*    padding: 30px;*/
+/*    font-size: 18px;*/
+/*}*/
+
+/*.footer-sections h5 {*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.footer-sections ul {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    list-style: none;*/
+/*}*/
+
+/*.footer-sections ul li {*/
+/*    margin: 0 10px;*/
+/*}*/
+
+/*.footer-sections ul li a {*/
+/*    color: #fff;*/
+/*}*/
+
+/*.footer-sections ul li a:hover {*/
+/*    opacity: 0.7;*/
+/*}*/
