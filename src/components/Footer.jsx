@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-sections">
-                <h5>Travelly &copy;</h5>
+                <h5>Lomhae &copy;</h5>
                 <ul>
                     <li>
                         <a href="#" title="twitter-social-media">

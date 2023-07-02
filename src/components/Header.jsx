@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <h1 id="logo">Travelly</h1>
+                <h1 id="logo">Lomhae</h1>
                 <ul>
                     <li>
                         <a href="#section-locations">Locations</a>
